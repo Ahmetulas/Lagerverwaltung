@@ -6,7 +6,7 @@ package com.Lagerverwaltung;
 public class Ausgabe {
 
     public void ausgabeStart(){
-        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHerzlich Willkommen bei Lagerverwaltung!\nUm die verfügbaren Befehle zu sehen geben Sie den Befehl 'help' ein. ");
+        System.out.println("cHerzlich Willkommen bei Lagerverwaltung!\nUm die verfügbaren Befehle zu sehen geben Sie den Befehl 'help' ein. ");
         System.out.println("Als erstes müssen Sie das Lager konfigurieren! ");
     }
 
@@ -25,6 +25,9 @@ public class Ausgabe {
 
     }
 
+    public void clearScreen(){
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    }
     public void eingabeZeilenEingeben(){
         System.out.println("Aus wievielen Zeilen soll das Lager bestehen? (z.Bsp.: 3)");
     }
@@ -44,7 +47,7 @@ public class Ausgabe {
         System.out.println("Verpackungseinheit: (z.Bsp.: 5)");
     }
     public void eingabeArtikelBezeichnung(){
-        System.out.println("Artikelbezeichnung");
+        System.out.println("Artikelbezeichnung: ");
     }
     public void eingabeLieferantName(){
         System.out.println("Lieferant: (z.Bsp.: DHL)" );
@@ -57,7 +60,10 @@ public class Ausgabe {
     }
 
     public void ausgabeLagerWirdGezeichnet(){
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         System.out.println("Das Lager wird unten abgebildet:");
+        System.out.println("Information:\n Wenn das aktuelle Position leer ist, sieht man die Position. Befindet sich jedoch ein Artikel, \n so wird die Artikelnummer angezeigt.");
+        System.out.println();
     }
     public void ausgabeFehler(String fehler){
         System.out.println(fehler);
@@ -74,6 +80,7 @@ public class Ausgabe {
     public void ausgabeEingelagert(){
         System.out.println("Artikel wurde erfolgreich eingelagert");
     }
+
 
 
 }

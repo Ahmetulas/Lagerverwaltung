@@ -65,6 +65,13 @@ public class Lager {
 
     }
 
+    public Artikel inhalt(int position){
+        for(int i=0; i<this.artikelListe.size(); i++){
+            if(this.artikelListe.get(i).getPosition()==position){
+                return this.artikelListe.get(i);
+            }
+        }return null;
+    }
 
     public boolean auslagern(int position){
         if(position<=this.artikelListe.size()){

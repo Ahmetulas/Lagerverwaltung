@@ -55,12 +55,22 @@ public class Console {
 
                 case "lager":
                     lager.lagerZeigen();
+
+                    break;
+
+                case "inhalt":
+                    this.inhalt();
                     break;
             }
         }
     }
 
 
+    public void inhalt(){
+        ausgabe.eingabePosition();
+        int position=scanint.nextInt();
+        lager.inhalt(position).informationAusgeben();
+    }
 
     public void auslagern(){
         ausgabe.eingabePosition();
