@@ -6,7 +6,8 @@ package com.Lagerverwaltung;
 public class Ausgabe {
 
     public void ausgabeStart(){
-        System.out.println("Herzlich Willkommen bei Lagerverwaltung!\nUm die verfügbaren Befehle zu sehen geben Sie den Befehl 'help' ein. ");
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHerzlich Willkommen bei Lagerverwaltung!\nUm die verfügbaren Befehle zu sehen geben Sie den Befehl 'help' ein. ");
+        System.out.println("Als erstes müssen Sie das Lager konfigurieren! ");
     }
 
 

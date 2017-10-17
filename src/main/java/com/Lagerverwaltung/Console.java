@@ -21,6 +21,7 @@ public class Console {
 
     public void befehle(){
         ausgabe.ausgabeStart();
+        this.konfigurieren();
         String befehl="";
 
         while(!befehl.equals("exit")) {
