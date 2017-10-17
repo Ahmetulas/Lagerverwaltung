@@ -20,6 +20,7 @@ public class Ausgabe {
         System.out.println("position    -       zeigt die jeweiligen Positionen der Artikeln an");
         System.out.println("inventar    -       zeigt alle Artikeln mit deren Informationen an");
         System.out.println("lager       -       Lager darstellen");
+        System.out.println("exit        -       beendet das Programm");
         System.out.println("------------------------------------------------------------------------");
 
     }

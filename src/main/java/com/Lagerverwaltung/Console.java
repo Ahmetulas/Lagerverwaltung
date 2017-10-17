@@ -39,7 +39,7 @@ public class Console {
 
                 case "auslagern":
                     this.auslagern();
-
+                    break;
 
                 case "position":
                     this.position();
