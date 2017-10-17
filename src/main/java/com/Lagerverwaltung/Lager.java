@@ -37,7 +37,6 @@ public class Lager {
 
     public void lagerZeigen(){
         int z=0;
-
         for(int x=0; x < this.zeile; x++){
             System.out.print("----------------");
         }
@@ -46,7 +45,7 @@ public class Lager {
 
             for(int y = 0; y<zeile; y++){
                 if(this.artikelListe.get(z).getArtikelNummer()==0){
-                    System.out.print("|\t" + this.getArtikelListe().get(z).getPosition() + "\t");
+                    System.out.print("|    "+this.getArtikelListe().get(z).getPosition()+"(leer)"+ "\t");
                     z++;
                 }
                 else {
@@ -102,11 +101,13 @@ public class Lager {
     }
 
     public void artikelInformation(){
-        for(int i=0; i<this.artikelListe.size(); i++){
-            if(this.artikelListe.get(i).getArtikelNummer()!=0){
-                this.artikelListe.get(i).informationAusgeben();
+            ausgabe.clearScreen();
+            for(int i=0; i<this.artikelListe.size(); i++){
+                if(this.artikelListe.get(i).getArtikelNummer()!=0){
+                    this.artikelListe.get(i).informationAusgeben();
+                }
             }
-        }
+
     }
 
 

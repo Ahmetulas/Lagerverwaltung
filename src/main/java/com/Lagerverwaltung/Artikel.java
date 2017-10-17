@@ -29,6 +29,7 @@ public class Artikel {
     public Lieferant getLieferant(){
         return this.lieferant;
     }
+
     public String getBezeichnung(){
         return this.artikelBezeichnung;
     }
@@ -63,9 +64,9 @@ public class Artikel {
 
     public void informationAusgeben(){
         System.out.println("-----------------------------------------");
-        System.out.println("Artikelnummer: "+ this.artikelNummer);
-        System.out.println("Artikelbezeichnung: "+ this.artikelBezeichnung);
-        System.out.println("Verpackungseinheit: "+ this.verpackungsEinheit);
+        System.out.println("Artikelnummer: "+ this.getArtikelNummer());
+        System.out.println("Artikelbezeichnung: "+ this.getBezeichnung());
+        System.out.println("Verpackungseinheit: "+ this.getVerpackungsEinheit());
         System.out.println("Lieferantinformationen: ");
         System.out.println("       Name:"+this.lieferant.getName());
         System.out.println("       Ort: " + this.lieferant.getOrt());

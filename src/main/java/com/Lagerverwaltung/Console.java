@@ -26,7 +26,7 @@ public class Console {
 
         while(!befehl.equals("exit")) {
             System.out.println("Befehl: ");
-            befehl = scan.nextLine();
+            befehl = scan.nextLine().toLowerCase();
 
             switch (befehl) {
                 case "konfig":
@@ -34,14 +34,17 @@ public class Console {
                     break;
 
                 case "einlagern":
+                    ausgabe.clearScreen();
                     this.einlagern();
                     break;
 
                 case "auslagern":
+                    ausgabe.clearScreen();
                     this.auslagern();
                     break;
 
                 case "position":
+                    ausgabe.clearScreen();
                     this.position();
                     break;
 
@@ -49,16 +52,18 @@ public class Console {
                     lager.artikelInformation();
                     break;
 
-                case "help":
+                case "hilfe":
                     ausgabe.ausgabeHelp();
                     break;
 
                 case "lager":
+                    ausgabe.clearScreen();
                     lager.lagerZeigen();
 
                     break;
 
                 case "inhalt":
+                    ausgabe.clearScreen();
                     this.inhalt();
                     break;
             }
@@ -69,7 +74,9 @@ public class Console {
     public void inhalt(){
         ausgabe.eingabePosition();
         int position=scanint.nextInt();
-        lager.inhalt(position).informationAusgeben();
+        if(lager.inhalt(position).getArtikelNummer()==0){
+            ausgabe.ausgabeFehler("leer");
+        }else lager.inhalt(position).informationAusgeben();
     }
 
     public void auslagern(){
