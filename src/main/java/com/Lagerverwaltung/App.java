@@ -8,8 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Lager lager = new Lager();
-
-        lager.zeichnen(3,2);
+       Console console= new Console();
+       console.befehle();
     }
 }

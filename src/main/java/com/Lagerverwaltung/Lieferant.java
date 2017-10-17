@@ -7,10 +7,24 @@ public class Lieferant {
 
     private String name;
     private String ort;
+    private String telNr;
 
-    public Lieferant(String name, String ort){
+    public Lieferant(String name, String ort, String telNr){
         this.name=name;
         this.ort=ort;
+        this.telNr=telNr;
+    }
+
+    public Lieferant(){
+
+    }
+
+    public String getTelNr(){
+        return this.telNr;
+    }
+
+    public void setTelNr(String telNr){
+        this.telNr=telNr;
     }
 
     public String getName(){
