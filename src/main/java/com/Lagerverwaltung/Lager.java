@@ -16,32 +16,40 @@ public class Lager {
         this.artikelListe = new ArrayList<Artikel>();
     }
 
-    public ArrayList getArtikelListe(){
+    public ArrayList<Artikel> getArtikelListe(){
         return this.artikelListe;
     }
 
 
     public void zeichnen(int spalte, int zeile){
 
-        for(int i =0; i<(this.spalte*this.zeile); i++){
-            this.getArtikelListe().add(new Artikel());
-        }
+        int erg = spalte * zeile;
         this.zeile=zeile;
         this.spalte=spalte;
-        for(int x=0; x<this.zeile; x++){
-            System.out.print("----------------");
+        int z =0;
+        int ahmet=0;
+
+        for(int i = 0; i < erg; i++){
+            this.artikelListe.add(new Artikel(i,3,"ahmet"));
+        }
+        for(int x=0; x < this.zeile; x++){
+            System.out.print("--------");
         }
         for(int i= 0; i < spalte; i++){
             System.out.println();
 
             for(int y = 0; y<zeile; y++){
-                System.out.print("|    "+this.getArtikelListe().get(y)+ "\t");
 
+                for(; z < this.artikelListe.size(); z++)
+                {
+                    z = ahmet;
+                    System.out.print("|    " + this.getArtikelListe().get(i).getArtikelNummer() + "\t");
+                }
             }
             System.out.print("|");
             System.out.println();
             for(int x=0; x<this.zeile; x++){
-                System.out.print("----------------");
+                System.out.print("--------");
             }
         }
         System.out.println();

@@ -10,6 +10,6 @@ public class App
     {
         Lager lager = new Lager();
 
-        lager.zeichnen(5,2);
+        lager.zeichnen(3,2);
     }
 }
