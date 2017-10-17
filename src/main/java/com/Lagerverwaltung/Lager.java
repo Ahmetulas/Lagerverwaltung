@@ -28,7 +28,7 @@ public class Lager {
         int erg = spalte * zeile;
         this.zeile=zeile;
         this.spalte=spalte;
-        int z=0;
+        this.artikelListe = new ArrayList<Artikel>();
 
         for(int i = 0; i < erg; i++){
             this.artikelListe.add(new Artikel(i,0,0,""));
@@ -74,16 +74,23 @@ public class Lager {
         else return false;
     }
 
-    public void einlagern(int position,Artikel artikel){
-        this.artikelListe.set(position,artikel);
+    public boolean einlagern(int position,Artikel artikel){
+
+        if((position >= 0 && position < this.artikelListe.size()) && artikel != null){
+            this.artikelListe.set(position,artikel);
+            artikel.setPosition(position);
+            return true;
+        }else return false;
+
     }
 
     public int position(int artikelnummer){
-        for (int i = 0; i < this.artikelListe.size();i++){
+        int i=0;
+        for (; i < this.artikelListe.size();i++){
             if(this.artikelListe.get(i).getArtikelNummer()==artikelnummer){
                 return this.artikelListe.get(i).getPosition();
-            }else return 0;
-        }return 0;
+            }else return 4;
+        }return this.artikelListe.get(i).getPosition();
     }
 
     public void artikelInformation(){

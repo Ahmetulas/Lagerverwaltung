@@ -23,7 +23,7 @@ public class Artikel {
         this.verpackungsEinheit=verpackungsEinheit;
         this.artikelNummer = artikelNummer;
         this.artikelBezeichnung = artikelBezeichnung;
-        this.lieferant = new Lieferant();
+        this.lieferant = lieferant;
     }
 
     public Lieferant getLieferant(){
@@ -63,13 +63,13 @@ public class Artikel {
 
     public void informationAusgeben(){
         System.out.println("-----------------------------------------");
-        System.out.println("Artikelnummer "+ this.artikelNummer);
-        System.out.println("Artikelbezeichnung "+ this.artikelBezeichnung);
-        System.out.println("Verpackungseinheit "+ this.verpackungsEinheit);
+        System.out.println("Artikelnummer: "+ this.artikelNummer);
+        System.out.println("Artikelbezeichnung: "+ this.artikelBezeichnung);
+        System.out.println("Verpackungseinheit: "+ this.verpackungsEinheit);
         System.out.println("Lieferantinformationen: ");
         System.out.println("       Name:"+this.lieferant.getName());
-        System.out.println("       Ort: " + lieferant.getOrt());
-        System.out.println("       TelNr: "+lieferant.getTelNr());
+        System.out.println("       Ort: " + this.lieferant.getOrt());
+        System.out.println("       TelNr: "+this.lieferant.getTelNr());
         System.out.println("Position: "+ this.position);
         System.out.println("-----------------------------------------");
 

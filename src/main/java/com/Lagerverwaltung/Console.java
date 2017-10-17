@@ -20,7 +20,7 @@ public class Console {
     }
 
     public void befehle(){
-        ausgabe.ausgabeHelp();
+        ausgabe.ausgabeStart();
         String befehl="";
 
         while(!befehl.equals("exit")) {
@@ -28,7 +28,7 @@ public class Console {
             befehl = scan.nextLine();
 
             switch (befehl) {
-                case "konfigurieren":
+                case "konfig":
                     this.konfigurieren();
                     break;
 
@@ -50,6 +50,10 @@ public class Console {
 
                 case "help":
                     ausgabe.ausgabeHelp();
+                    break;
+
+                case "lager":
+                    lager.lagerZeigen();
                     break;
             }
         }
@@ -82,7 +86,11 @@ public class Console {
         ausgabe.eingabeLieferantTel();
         String lieferantTel = scan.nextLine();
         Lieferant lieferant = new Lieferant(lieferName,lieferantOrt,lieferantTel);
-        lager.einlagern(position,new Artikel(artikelnummer,verpackungseinheit,artikelBezeichnung,lieferant));
+        if(lager.einlagern(position,new Artikel(artikelnummer,verpackungseinheit,artikelBezeichnung,lieferant))){
+            lager.einlagern(position,new Artikel(artikelnummer,verpackungseinheit,artikelBezeichnung,lieferant));
+            ausgabe.ausgabeEingelagert();
+        }else ausgabe.ausgabeFehler("Artikel könnte nicht eingelagert werden! Überprüfen Sie die Position!");
+
     }
 
     public void konfigurieren(){

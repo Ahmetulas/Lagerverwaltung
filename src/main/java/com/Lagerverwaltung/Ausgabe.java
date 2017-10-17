@@ -13,11 +13,12 @@ public class Ausgabe {
     public void ausgabeHelp(){
         System.out.println("------------------------------------------------------------------------");
         System.out.println("help        -       zeigt verfügbare Befehle an");
+        System.out.println("konfig      -       Konfiguriert das Lager ");
         System.out.println("einlagern   -       einen Artikel in den Lager deponieren");
         System.out.println("auslagern   -       einen Artikel aus dem Lager entfernen");
         System.out.println("position    -       zeigt die jeweiligen Positionen der Artikeln an");
         System.out.println("inventar    -       zeigt alle Artikeln mit deren Informationen an");
-        System.out.println("konfig      -       Konfiguriert das Lager ");
+        System.out.println("lager       -       Lager darstellen");
         System.out.println("------------------------------------------------------------------------");
 
     }
