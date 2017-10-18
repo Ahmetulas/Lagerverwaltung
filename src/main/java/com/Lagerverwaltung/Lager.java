@@ -25,8 +25,11 @@ public class Lager {
 
     /**
      *
-     * @param spalte 
-     * @param zeile
+     * @param spalte anzahl der Spalten. ArrayList wird in form einer Tabelle dargestellt, diese Parameter bestimmt die Spalten der Tabelle.
+     * @param zeile anzahl der Zeilen. ArrayList wird in form einer Tabelle dargestellt, diese Parameter bestimmt die Zeilen.
+     *
+     *              Diese Methode generiert eine ArrayList vom Typ Artikel. Die größe der Liste bestimmt der Benutzer indem er Zeile und Spalte angibt.
+     *              Zeile wird mit der Spalte multipliziert und dadurch wird die Größe ermittelt.
      */
 
     public void zeichnen(int spalte, int zeile){
@@ -41,6 +44,11 @@ public class Lager {
         }
     }
 
+
+    /**
+     * Hier wird das Lager in Form einer Tabelle dargestellt.
+     * Wenn sich in der Liste artikelliste ein Artikel befindet so wird diese Angezeigt, ansonsten wird die Position+leer angezeigt,
+     */
     public void lagerZeigen(){
         int z=0;
         for(int x=0; x < this.zeile; x++){
