@@ -73,7 +73,7 @@ public class Lager {
     }
 
     public boolean auslagern(int position){
-        if(position<=this.artikelListe.size()){
+        if(position <= this.artikelListe.size()){
             this.artikelListe.set(position,new Artikel(position,0,0,""));
             return true;
         }
