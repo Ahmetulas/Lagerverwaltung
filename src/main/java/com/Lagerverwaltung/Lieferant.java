@@ -2,6 +2,9 @@ package com.Lagerverwaltung;
 
 /**
  * Created by ahmetulas on 17.10.17.
+ *
+ * In dieser Klasse wird der Lieferant definiert. Der Lieferant ist eine Attribut der Klasse Artikel.
+ * Hier werden die Daten des Lieferanten generiert.
  */
 public class Lieferant {
 
@@ -27,6 +30,11 @@ public class Lieferant {
         this.telNr=telNr;
     }
 
+
+    /**
+     *
+     * @return
+     */
     public String getName(){
         return this.name;
     }

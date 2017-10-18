@@ -108,7 +108,6 @@ public class Console {
             lager.einlagern(position,new Artikel(artikelnummer,verpackungseinheit,artikelBezeichnung,lieferant));
             ausgabe.ausgabeEingelagert();
         }else ausgabe.ausgabeFehler("Artikel könnte nicht eingelagert werden! Überprüfen Sie die Position!");
-
     }
 
     public void konfigurieren(){

@@ -23,6 +23,12 @@ public class Lager {
     }
 
 
+    /**
+     *
+     * @param spalte 
+     * @param zeile
+     */
+
     public void zeichnen(int spalte, int zeile){
 
         int erg = spalte * zeile;
