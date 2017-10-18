@@ -1,4 +1,4 @@
-package com.Lagerverwaltung;
+package com.Lagerverwaltung.Verwaltung;
 
 /**
  * Created by ahmetulas on 17.10.17.

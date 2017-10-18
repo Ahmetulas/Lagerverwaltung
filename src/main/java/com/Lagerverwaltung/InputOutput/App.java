@@ -1,4 +1,6 @@
-package com.Lagerverwaltung;
+package com.Lagerverwaltung.InputOutput;
+
+import com.Lagerverwaltung.InputOutput.Console;
 
 /**
  * Hello world!

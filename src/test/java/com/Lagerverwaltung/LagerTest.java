@@ -1,6 +1,8 @@
 package com.Lagerverwaltung;
 
-import java.util.ArrayList;
+import com.Lagerverwaltung.Verwaltung.Artikel;
+import com.Lagerverwaltung.Verwaltung.Lager;
+import com.Lagerverwaltung.Verwaltung.Lieferant;
 
 import static org.junit.Assert.*;
 

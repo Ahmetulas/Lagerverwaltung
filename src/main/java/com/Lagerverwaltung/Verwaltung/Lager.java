@@ -1,6 +1,8 @@
-package com.Lagerverwaltung;
+package com.Lagerverwaltung.Verwaltung;
 
-import java.lang.reflect.Array;
+import com.Lagerverwaltung.InputOutput.Ausgabe;
+import com.Lagerverwaltung.Verwaltung.Artikel;
+
 import java.util.ArrayList;
 
 /**
@@ -78,6 +80,12 @@ public class Lager {
 
     }
 
+
+    /**
+     *
+     * @param position
+     * @return
+     */
     public Artikel inhalt(int position){
         for(int i=0; i<this.artikelListe.size(); i++){
             if(this.artikelListe.get(i).getPosition()==position){

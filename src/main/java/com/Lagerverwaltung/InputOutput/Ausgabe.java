@@ -1,4 +1,4 @@
-package com.Lagerverwaltung;
+package com.Lagerverwaltung.InputOutput;
 
 /**
  * Created by ahmetulas on 17.10.17.

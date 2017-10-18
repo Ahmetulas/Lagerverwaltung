@@ -1,4 +1,8 @@
-package com.Lagerverwaltung;
+package com.Lagerverwaltung.InputOutput;
+
+import com.Lagerverwaltung.Verwaltung.Artikel;
+import com.Lagerverwaltung.Verwaltung.Lager;
+import com.Lagerverwaltung.Verwaltung.Lieferant;
 
 import java.util.Scanner;
 
