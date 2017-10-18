@@ -33,7 +33,7 @@ public class Lieferant {
 
     /**
      *
-     * @return
+     * @return die Attribute name von dieser Klasse
      */
     public String getName(){
         return this.name;

@@ -8,6 +8,8 @@ import java.util.Scanner;
 
 /**
  * Created by ahmetulas on 17.10.17.
+ *
+ *Diese Klasse ist die Schnittstelle für den Benutzer. Hier werden
  */
 public class Console {
 
@@ -114,6 +116,11 @@ public class Console {
         }else ausgabe.ausgabeFehler("Artikel könnte nicht eingelagert werden! Überprüfen Sie die Position!");
     }
 
+
+    public void einlagernErweiterung(){
+
+    }
+    
     public void konfigurieren(){
         ausgabe.eingabeZeilenEingeben();
         int zahl1= scanint.nextInt();

@@ -2,7 +2,6 @@ package com.Lagerverwaltung.Verwaltung;
 
 import com.Lagerverwaltung.InputOutput.Ausgabe;
 import com.Lagerverwaltung.Verwaltung.Artikel;
-
 import java.util.ArrayList;
 
 /**
