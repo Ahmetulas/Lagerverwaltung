@@ -3,11 +3,7 @@ package com.Lagerverwaltung.InputOutput;
 import com.Lagerverwaltung.Verwaltung.Artikel;
 import com.Lagerverwaltung.Verwaltung.Lager;
 import com.Lagerverwaltung.Verwaltung.Lieferant;
-import presentation.*;
-import presentation.CommandLine;
-import presentation.IUserInterface;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**

@@ -1,0 +1,8 @@
+com/Lagerverwaltung/Verwaltung/Lieferant.class
+com/Lagerverwaltung/InputOutput/IUserInterface.class
+com/Lagerverwaltung/Verwaltung/Artikel.class
+com/Lagerverwaltung/Verwaltung/Lager.class
+com/Lagerverwaltung/InputOutput/Ausgabe.class
+com/Lagerverwaltung/InputOutput/App.class
+com/Lagerverwaltung/InputOutput/CommandLine.class
+com/Lagerverwaltung/InputOutput/Console.class
