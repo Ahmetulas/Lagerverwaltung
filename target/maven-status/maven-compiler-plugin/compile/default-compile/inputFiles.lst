@@ -1,6 +1,8 @@
-/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/Artikel.java
-/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/Lieferant.java
-/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/Lager.java
-/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/App.java
-/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/Ausgabe.java
-/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/Console.java
+/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/Verwaltung/Lager.java
+/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/Verwaltung/Artikel.java
+/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/InputOutput/Console.java
+/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/InputOutput/Ausgabe.java
+/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/Verwaltung/Lieferant.java
+/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/InputOutput/App.java
+/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/InputOutput/IUserInterface.java
+/Users/ahmetulas/Documents/workspace/Lagerverwaltung/src/main/java/com/Lagerverwaltung/InputOutput/CommandLine.java
